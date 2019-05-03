@@ -1,0 +1,67 @@
+body {
+    color: black;
+    background-image: url("../images/kh2_background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size:1em;
+}
+
+#content {
+    min-height: calc(100vh - 40px);
+}
+
+ul, li {
+    list-style-type: square;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+li.nested {
+    list-style-type: none;
+}
+
+div.container {
+    background-color: rgb(242, 242, 242, 0.7);
+    border-radius: 25px;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+p.grad_info {
+    font-size: 2em;
+    vertical-align: center;
+    margin-top:15%;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: darkorchid;
+}
+
+a:hover {
+    color:white;
+}
+
+a:active {
+    color:black;
+}
+
+footer {
+    background-color: #343A3F;
+    color: white;
+    font-size: 0.7em;
+    height:50px;
+}
+
+p.footer_content {
+    height: 30px;
+    padding-top:12px;
+}
+
+
+
