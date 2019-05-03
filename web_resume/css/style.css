@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-size:1em;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #content {
@@ -21,7 +22,7 @@ li.nested {
 }
 
 div.container {
-    background-color: rgb(242, 242, 242, 0.7);
+    background-color: rgba(226, 242, 247, 0.7);
     border-radius: 25px;
     margin-top: 5em;
     margin-bottom: 2em;
@@ -49,6 +50,12 @@ a:hover {
 
 a:active {
     color:black;
+}
+
+table.skills, th.skills, td.skills {
+    width: 100%;
+    font-style: italic;
+    font-weight: bold;
 }
 
 footer {
