@@ -7,20 +7,16 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* Makes the floater cover the bottom */
 #content {
     min-height: calc(100vh - 40px);
-}
-
-ul, li {
-    list-style-type: square;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
 }
 
 li.nested {
     list-style-type: none;
 }
 
+/* Adds color to each container div to make it easier to read apart from the bg */
 div.container {
     background-color: rgba(226, 242, 247, 0.7);
     border-radius: 25px;
@@ -30,18 +26,19 @@ div.container {
     padding-bottom: 2em;
 }
 
+#work {
+    margin-bottom: 10em;
+}
+
 p.grad_info {
     font-size: 2em;
     vertical-align: center;
     margin-top:15%;
 }
 
+/* Change link colors depending on their state */
 a:link {
     color: blue;
-}
-
-a:visited {
-    color: darkorchid;
 }
 
 a:hover {
@@ -51,6 +48,8 @@ a:hover {
 a:active {
     color:black;
 }
+
+/* tables and footer */
 
 table.skills, th.skills, td.skills {
     width: 100%;
@@ -69,6 +68,11 @@ p.footer_content {
     height: 30px;
     padding-top:12px;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
 
 
 

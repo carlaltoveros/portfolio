@@ -27,16 +27,26 @@ EMAIL: altoverc@uci.edu
 <body>
 <div id="content">
   <!-- navigation bar for the basic parts of the portfolio -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">Carl Altoveros
         <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="#contact">Contact</a>
       <a class="nav-item nav-link" href="#education">Education</a>
-      <a class="nav-item nav-link" href="#projects">Projects</a>
+      <div style="position:relative">
+      <a class="nav-item dropdown nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#projects">Project Descriptions</a>
+          <a class="dropdown-item" href="./projects.html">Project Gallery</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Still working on the links</a>
+        </div>
+      </div>
+      <a class="nav-item nav-link" href="#skills">Skills</a>
       <a class="nav-item nav-link" href="#work">Experience</a>
     </div>
   </nav>
+
   <!-- Contact aspect that includes how employers can reach me as well
   as links to my GitHub and LinkedIn -->
   <div class="container" id="contact">
@@ -128,7 +138,7 @@ EMAIL: altoverc@uci.edu
     </ul>
   </div>
   <!-- Technical Skills-->
-  <div class="container" id="Skills">
+  <div class="container" id="skills">
     <h1>Technical Skills</h1>
     <table class="skills">
       <tr>
@@ -175,5 +185,9 @@ EMAIL: altoverc@uci.edu
     <p class="footer_content">Web design by Carl Altoveros<br>
     Best to reach me by email [ altoverc@uci.edu ]</p>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 </html>
