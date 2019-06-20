@@ -5,6 +5,8 @@ body {
     background-attachment: fixed;
     font-size:1em;
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Makes the floater cover the bottom */
@@ -16,6 +18,11 @@ li.nested {
     list-style-type: none;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 /* Adds color to each container div to make it easier to read apart from the bg */
 div.container {
     background-color: rgba(226, 242, 247, 0.7);
@@ -25,6 +32,14 @@ div.container {
     padding-top: 3em;
     padding-bottom: 2em;
 }
+
+/* Taglines for the images in project gallery */
+p.fab-tag {
+    background-color: #2B3E50;
+    color: #DF691A;
+    font-weight: bold;
+}
+
 
 #work {
     margin-bottom: 10em;

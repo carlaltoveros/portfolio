@@ -13,6 +13,8 @@ EMAIL: altoverc@uci.edu
    <!-- external stylesheet -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+   <!-- image column stylesheet -->
+   <link rel="stylesheet" href="css/gallery.css">
    <!-- bootstrap here! -->
    <link rel="stylesheet" href="css/style.css">
    <!-- using google fonts for icons -->
@@ -29,23 +31,71 @@ EMAIL: altoverc@uci.edu
 <div id="content">
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Projects
-        <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="./index.html">Home</a>
       <a class="nav-item nav-link" href="#fabmovies">Fabflix Movies</a>
       <a class="nav-item nav-link" href="#webapis">Twitter/Spotify</a>
       <a class="nav-item nav-link" href="#ionicsleep">Ionic Sleeptracker</a>
-      <a class="nav-item nav-link" style="align-content: right" href="./index.html">Home</a>
     </div>
   </nav>
   <div class="container" id="fabmovies">
     <h1>Fabflix Movies</h1>
+
+    <div class="row">
+      <div class="col">
+        <img src="./images/fabflix/login.png" alt="Login page with error checking. User info is stored in MySQL and passwords are encrypted." onclick="expandImage(this);">
+        <p class="fab-tag">
+          &nbspLog in
+        </p>
+      </div>
+
+      <div class="col">
+        <img src="./images/fabflix/directory.png" alt="Directory page that gives users a choice of how they want to search for movies." onclick="expandImage(this);">
+        <p class="fab-tag">
+          &nbspDirectory
+        </p>
+      </div>
+    
+      <div class="col">
+        <img src="./images/fabflix/advanced_search.png" alt="Advanced search page where users can search movies by different parameters (can choose multiple)." onclick="expandImage(this);">
+        <p class="fab-tag">
+          &nbspAdvanced Search
+        </p>
+      </div>
+      <div class="col">
+        <img src="./images/fabflix/browse.png" alt="Browse page where users can filter by genres or movie titles." onclick="expandImage(this);">
+        <p class="fab-tag">
+          &nbspBrowse
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p>Adding rest of project soon, testing out different options for showcasing the projects</p>
+      </div>
+    </div>
+    <!-- Show the expanded image -->
+    <div class="showImg">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    
+      <!-- Expanded image -->
+      <img id="expandedImg" style="width:100%; height:auto; border-radius: 10px;">
+    
+      <!-- Image text -->
+      <div id="imgText"></div>
+    </div>  
   </div>
+
   <div class="container" id="webapis">
     <h1>Twitter/Spotify Project</h1>
+    <p>filler</p>
   </div>
   <div class="container" id="ionicsleep">
     <h1>Ionic Sleeptracker</h1>
+    <p>filler</p>
   </div>    
 </div>
+
+<script src="js/myresume.img.js"></script>
 </body>
 </html>
